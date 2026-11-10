@@ -11,7 +11,7 @@ export default function Home() {
       <Cover />
       <div className="home-content grain-surface">
         <section id="intro" className="intro" aria-label="What mesh. does">
-          <p className="tagline wrap">We’re a builder space where we seek and develop talent through&nbsp;building.</p>
+          <p className="tagline wrap">We’re a builder space in Budapest where we seek and develop&nbsp;talent.</p>
         </section>
         <Journal />
         <Builds />
