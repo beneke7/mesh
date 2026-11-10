@@ -4,21 +4,21 @@ import { useEffect, useRef, useState } from "react";
 import { u } from "../../lib/base";
 
 const builds = [
-  { title: "AquaLab", image: "/builds/building-aquaLab-01.webp", alt: "An AquaLab underwater robotics prototype." },
-  { title: "Resoloon", image: "/builds/building-resoloon-01.webp", alt: "Work on the Resoloon balloon project." },
-  { title: "CanSat", image: "/builds/cansat-competition-02.webp", alt: "A can-sized satellite project." },
+  { title: "Resoloon", image: "/builds/balloon.webp", alt: "Two builders launching the Resoloon weather balloon in a field." },
+  { title: "Tonekeep", image: "/builds/tonekeep.webp", alt: "A builder wearing ear defenders beside a drum kit and audio hardware." },
+  { title: "Holorat", image: "/builds/holorat.webp", alt: "A builder crouching next to an orange robot rover." },
+  { title: "Hackathon", image: "/builds/hackathon.webp", alt: "A mesh. team with their robots at a robotics hackathon." },
   { title: "Acoustic thermometry", image: "/builds/thermometer.webp", alt: "An ultrasonic thermometer prototype." },
-  { title: "Robotics", image: "/builds/bench-detail.webp", alt: "A builder working on a hardware component." },
-  { title: "CAD experiments", image: "/builds/cad-disc.webp", alt: "A circular part being developed in CAD." },
-  { title: "Hardware prototypes", image: "/builds/flight.webp", alt: "Exposed wiring on an experimental payload." },
-  { title: "Computer vision", image: "/builds/chessboard.webp", alt: "A builder showing a physical and digital chessboard." },
-  { title: "Built together", image: "/builds/hack-overhead.webp", alt: "Builders collaborating around a worktable." },
+  { title: "Gaemlabs", image: "/builds/gaemlabs.webp", alt: "Two builders testing virtual reality headsets." },
+  { title: "Robotics", image: "/builds/robot-arm.webp", alt: "A robot arm mounted on a test bench." },
+  { title: "Smart chessboard", image: "/builds/led-chessboard.webp", alt: "A builder playing on an LED chessboard linked to a projected board." },
   { title: "Electronics", image: "/builds/parts.webp", alt: "Components and electronics organized for prototyping." },
-  { title: "VR experiments", image: "/builds/virtual-reality.webp", alt: "A builder trying a virtual reality headset." },
+  { title: "LED decor", image: "/builds/led-decor.webp", alt: "A builder holding up a glowing circular LED display." },
   { title: "Launch tests", image: "/builds/parachute.webp", alt: "A parachute and experimental flight hardware." },
-  { title: "Light experiments", image: "/builds/lamp.webp", alt: "An experimental lamp project." },
-  { title: "Workshop", image: "/builds/workshop-door.webp", alt: "The mesh. builderspace workshop." },
-  { title: "Demos", image: "/builds/demo-1440.webp", alt: "Builders sharing a project demonstration." },
+  { title: "Demo day", image: "/builds/demo-day.webp", alt: "A builder presenting a project in front of a projected screen." },
+  { title: "Built together", image: "/builds/built-together.webp", alt: "Builders working side by side at their laptops." },
+  { title: "Hardware prototypes", image: "/builds/flight.webp", alt: "Exposed wiring on an experimental payload." },
+  { title: "Deli", image: "/builds/deli.webp", alt: "A builder giving a talk on stage." },
 ];
 export default function Builds() {
   const gallery = useRef<HTMLDivElement>(null);

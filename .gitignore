@@ -8,3 +8,4 @@ out/
 *.log
 *.zip
 unused-assets/
+mesh_website_builds/
