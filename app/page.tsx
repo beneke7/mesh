@@ -12,7 +12,9 @@ export default function Home() {
       <div className="home-content grain-surface">
         <section id="intro" className="intro" aria-label="What mesh. does">
           <p className="tagline wrap">We’re a builder space where we seek and develop talent through&nbsp;building.</p>
-          <hr className="dent wrap" />
+          <div className="dent wrap" aria-hidden="true"><svg viewBox="0 0 20 22">
+            <path className="top" d="M10 1 19 6 10 11 1 6Z" /><path className="left" d="M1 6 10 11V21L1 16Z" /><path className="right" d="M19 6 10 11V21L19 16Z" />
+          </svg></div>
         </section>
         <Journal />
         <Builds />
