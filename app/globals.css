@@ -37,8 +37,7 @@ img,video{display:block;max-width:100%}h1,h2,h3,h4,p,figure{margin:0}::selection
 .motion-control{position:absolute;bottom:max(15px,env(safe-area-inset-bottom));right:20px;width:44px;height:44px;display:grid;place-items:center;color:#fff}
 .motion-control svg{width:16px;height:16px;fill:currentColor;filter:drop-shadow(0 1px 3px #111)}
 .grain-surface{position:relative;isolation:isolate;background:var(--surface)}
-.grain-surface::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('../public/grain.png') repeat;opacity:var(--grain-opacity);mask-image:linear-gradient(#000 8%,rgb(0 0 0 / .38) 24%,rgb(0 0 0 / .38) 74%,#000 94%)}
-.subpage.grain-surface::before{mask-image:linear-gradient(#000 8%,rgb(0 0 0 / .38) 24%,rgb(0 0 0 / .38) 74%,#000 94%)}
+.grain-surface::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('../public/grain.png') repeat;opacity:var(--grain-opacity);mask-image:linear-gradient(rgb(0 0 0 / .38) 74%,#000 94%)}
 .section-title{color:var(--accent);font-family:var(--heading-font);font-size:clamp(34px,5vw,68px);font-weight:var(--heading-weight);line-height:1.1;letter-spacing:var(--heading-spacing);text-transform:uppercase;font-variation-settings:"opsz" 12,"wdth" 100;margin-bottom:clamp(25px,3.3vw,48px)}
 .journal{padding-block:clamp(62px,6.6vw,104px) clamp(52px,5.5vw,85px)}
 .post-list{margin-inline-start:clamp(0px,4vw,58px)}.post-entry+.post-entry{margin-top:clamp(23px,2.7vw,38px)}
@@ -187,6 +186,5 @@ button[aria-disabled=true]{cursor:default}
 
 /* A five-by-three contact sheet extends beyond both viewport edges. */
 .home-content .build-grid{width:125%;max-width:none;margin-inline:0}
-.join-page.grain-surface::before{mask-image:linear-gradient(rgb(0 0 0 / .38) 74%,#000 94%)}
 
 @media(max-width:700px){.home-content .build-grid{grid-template-columns:repeat(3,minmax(0,1fr));width:125%;margin-inline:0}}
