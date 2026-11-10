@@ -138,9 +138,9 @@ button[aria-disabled=true]{cursor:default}
  .small-brand{font-size:25px}.story-heading{margin-bottom:40px}.photo-essay{grid-template-columns:1fr}
 }
 @media(max-width:390px){.build-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer .social-links{margin-left:0;width:100%}}
-.intro{position:relative;isolation:isolate;padding-top:clamp(96px,10vw,168px)}
-.intro::before{content:"";position:absolute;inset:0 0 -40%;z-index:-1;pointer-events:none;background:url('../public/grain.png') repeat;opacity:calc(var(--grain-opacity) * 2.6);mask-image:radial-gradient(ellipse 50% 45% at 50% 50%,#000 15%,transparent 100%)}
-.tagline{color:var(--paper);font:800 clamp(34px,5.6vw,84px)/1.02 var(--mono);letter-spacing:-.065em;text-wrap:balance;margin-bottom:clamp(40px,5vw,72px)}
+.intro{position:relative;isolation:isolate;overflow-x:clip;padding-top:clamp(96px,10vw,168px)}
+.tagline::before{content:attr(data-text);position:absolute;inset:-1.5em;padding:1.5em;z-index:-1;pointer-events:none;color:transparent;text-shadow:0 0 .25em #fff,0 0 .6em #fff,0 0 1.1em #fff;-webkit-mask:url('../public/grain.png') repeat;mask:url('../public/grain.png') repeat luminance;opacity:var(--tagline-grain,.3)}
+.tagline{position:relative;color:var(--paper);font:800 clamp(34px,5.6vw,84px)/1.02 var(--mono);letter-spacing:-.065em;text-wrap:balance;margin-bottom:clamp(40px,5vw,72px)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cover::after{animation:none}.build-tile,.build-tile img{transition:none}.build-tile:hover img{transform:none}}
 
 .notion-blank{height:1.2em}.notion-callout{margin:1.4em 0;padding-left:1em}.notion-image figcaption{font-size:13px;color:var(--secondary)}
