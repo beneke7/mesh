@@ -9,6 +9,7 @@
     {
       "slug": "mesh-retro-2",
       "displayTitle": "mesh. retro - becoming",
+      "summary": "Our story continues",
       "date": "2026-10-20",
       "category": "Community",
       "url": "https://www.growmesh.io/posts/mesh-retro-2",
@@ -20,6 +21,7 @@
     {
       "slug": "lean4-autoformalization",
       "displayTitle": "Lean4 Autoformalization Engine",
+      "summary": "A memory-efficient, single-GPU training and inference architecture for formalizing natural language mathematics into Lean 4 statement code using quantized Mixture-of-Experts, persistent Lean REPL compiler feedback, and dual-tier retrieval augmentation.",
       "date": "2026-08-15",
       "category": "Software",
       "url": "https://www.growmesh.io/posts/lean4-autoformalization",
@@ -28,6 +30,7 @@
     {
       "slug": "badcompany-2",
       "displayTitle": "Beyond the Context Window",
+      "summary": "The transition from LLMs as Chatbots to LLMs as Agents is a phase transition in software.",
       "date": "2026-01-18",
       "category": "Software",
       "url": "https://www.growmesh.io/posts/badcompany-2",
@@ -36,6 +39,7 @@
     {
       "slug": "call-for-builders",
       "displayTitle": "Call for Builders",
+      "summary": "What projects would be cool to apply with? Ideas and inspiration for builders looking to join.",
       "date": "2025-11-29",
       "category": "Community",
       "url": "https://www.growmesh.io/posts/call-for-builders",
@@ -47,6 +51,7 @@
     {
       "slug": "building-aquaLab",
       "displayTitle": "Building AquaLab",
+      "summary": "Kertesz Domokos' underwater robotics project from his high school years (age 15-16).",
       "date": "2025-11-05",
       "category": "Hardware",
       "url": "https://www.growmesh.io/posts/building-aquaLab",
@@ -58,6 +63,7 @@
     {
       "slug": "building-resoloon",
       "displayTitle": "How We Started Building Resoloon",
+      "summary": "The story of Resoloon really began for me about two and a half years ago with a simple, frustrating realization: satellite imagery was far too expensive. That moment was the spark; I knew there had to be a better way to get high-resolution intelligence. Of course later we identified that this is not that simple, but it was a great realization to start from.",
       "date": "2025-09-10",
       "category": "Hardware",
       "url": "https://www.growmesh.io/posts/building-resoloon",
@@ -69,6 +75,7 @@
     {
       "slug": "mesh-retro",
       "displayTitle": "mesh. Retrospective",
+      "summary": "Our story",
       "date": "2025-07-13",
       "category": "Community",
       "url": "https://www.growmesh.io/posts/mesh-retro",
@@ -80,6 +87,7 @@
     {
       "slug": "cansat-competition",
       "displayTitle": "CanSat - Satellite inside your soda can",
+      "summary": "Playing SpaceX in your backyard.",
       "date": "2025-02-19",
       "category": "Hardware",
       "url": "https://www.growmesh.io/posts/cansat-competition",
@@ -91,6 +99,7 @@
     {
       "slug": "addressing-the-challenges-of-traditional-thermometers",
       "displayTitle": "Addressing the Challenges of Traditional Thermometers",
+      "summary": "Developing a remote method to accurately measure temperature at specific points in air or water, enabling the construction of precise heat maps.",
       "date": "2025-02-02",
       "category": "Hardware",
       "url": "https://www.growmesh.io/posts/addressing-the-challenges-of-traditional-thermometers",
@@ -102,6 +111,7 @@
     {
       "slug": "builder-space",
       "displayTitle": "What is a builder space anyway?",
+      "summary": "The backbone of free innovation, a place to experiment and learn without boundaries.",
       "date": "2024-12-03",
       "category": "Community",
       "url": "https://www.growmesh.io/posts/builder-space",
@@ -113,6 +123,7 @@
     {
       "slug": "simple-way-to-build-efficient-repo-based-apps",
       "displayTitle": "RepoSnap - a simple way to build efficient repo-based apps",
+      "summary": "RepoSnap is a Chrome extension designed to streamline the process of making GitHub repository-based applications work (on Windows) by generating bash scripts directly from the README files of that GitHub repository.",
       "date": "2024-09-30",
       "category": "Software",
       "url": "https://www.growmesh.io/posts/simple-way-to-build-efficient-repo-based-apps",

@@ -34,6 +34,9 @@ img,video{display:block;max-width:100%}h1,h2,h3,h4,p,figure{margin:0}::selection
 .social-icon{display:inline-block;width:22px;height:22px;background:currentColor;mask-repeat:no-repeat;mask-position:center;mask-size:contain;flex:none}
 .icon-discord{mask-image:url('../public/icons/discord.svg')}.icon-x{mask-image:url('../public/icons/x.svg')}.icon-linkedin{mask-image:url('../public/icons/linkedin.svg')}.icon-instagram{mask-image:url('../public/icons/instagram.svg')}
 .hero-discord .social-icon{width:clamp(25px,2.4vw,34px);height:clamp(25px,2.4vw,34px)}
+.hero-down{position:absolute;left:50%;bottom:max(12px,env(safe-area-inset-bottom));transform:translateX(-50%);display:grid;place-items:center;width:88px;height:64px;color:#fff}
+.hero-down svg{width:72px;height:72px;fill:none;stroke:currentColor;stroke-width:1.3;filter:drop-shadow(0 1px 3px rgb(0 0 0 / .8))}
+.hero-down:hover{opacity:.7}
 .motion-control{position:absolute;bottom:max(15px,env(safe-area-inset-bottom));right:20px;width:44px;height:44px;display:grid;place-items:center;color:#fff}
 .motion-control svg{width:16px;height:16px;fill:currentColor;filter:drop-shadow(0 1px 3px #111)}
 .grain-surface{position:relative;isolation:isolate;background:var(--surface)}
@@ -135,6 +138,9 @@ button[aria-disabled=true]{cursor:default}
  .small-brand{font-size:25px}.story-heading{margin-bottom:40px}.photo-essay{grid-template-columns:1fr}
 }
 @media(max-width:390px){.build-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer .social-links{margin-left:0;width:100%}}
+.intro{padding-top:clamp(96px,10vw,168px)}
+.dent{border:0;border-top:1px solid rgb(255 255 255 / .22);margin-block:0}
+.tagline{color:var(--paper);font:800 clamp(34px,5.6vw,84px)/1.02 var(--mono);letter-spacing:-.065em;text-wrap:balance;margin-bottom:clamp(28px,3.4vw,52px)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cover::after{animation:none}.build-tile,.build-tile img{transition:none}.build-tile:hover img{transform:none}}
 
 .notion-blank{height:1.2em}.notion-callout{margin:1.4em 0;padding-left:1em}.notion-image figcaption{font-size:13px;color:var(--secondary)}
@@ -142,11 +148,12 @@ button[aria-disabled=true]{cursor:default}
 /* A denser two-column latest-posts grid, with a smaller text inset. */
 .home-content .section-title{color:var(--paper);font-family:var(--mono);font-weight:800;letter-spacing:-.06em;text-transform:none}
 .home-content .post-list{
- display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
- gap:clamp(14px,1.5vw,22px) clamp(18px,2.5vw,32px);
- margin-inline-start:clamp(0px,2vw,28px);
+ display:grid;grid-template-columns:1fr;
+ gap:clamp(26px,2.8vw,40px);
+ margin-inline:clamp(0px,2vw,28px) clamp(0px,6vw,96px);
 }
 .home-content .post-entry+.post-entry{margin-top:0}
+.home-content .post-excerpt{margin-top:8px;color:var(--secondary);font-size:clamp(15px,1.4vw,20px);line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
 @media(max-width:600px){
  .home-content .post-list{grid-template-columns:1fr;margin-inline-start:0;gap:18px}
 }

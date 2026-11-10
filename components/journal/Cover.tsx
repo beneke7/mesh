@@ -61,6 +61,9 @@ export default function Cover() {
         <a className="hero-discord" href="https://discord.gg/CVA4z3QYzE" aria-label="Discord"><SocialIcon brand="discord" /></a>
       </nav>
     </div>
+    <a className="hero-down" href="#intro" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5 12 16.5 20 8.5" /></svg>
+    </a>
     {!failed && <button type="button" className="motion-control" aria-label={wantsMotion ? "Pause montage" : "Play montage"} onClick={toggleMotion}>
       <svg aria-hidden="true" viewBox="0 0 18 18">{wantsMotion ? <path d="M5 3.5h2.2v11H5zm5.8 0H13v11h-2.2z" /> : <path d="m5.5 3 9.3 6-9.3 6z" />}</svg>
     </button>}

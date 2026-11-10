@@ -10,6 +10,10 @@ export default function Home() {
     <main id="main">
       <Cover />
       <div className="home-content grain-surface">
+        <section id="intro" className="intro" aria-label="What mesh. does">
+          <p className="tagline wrap">We’re a builder space where we seek and develop talent through&nbsp;building.</p>
+          <hr className="dent wrap" />
+        </section>
         <Journal />
         <Builds />
         <section className="community" aria-label="Join mesh."><div className="wrap">
