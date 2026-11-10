@@ -1,0 +1,122 @@
+{
+  "site": {
+    "applicationUrl": "https://app.notion.com/p/growmesh/1b88954d17084159aab85a6ff3fcd316",
+    "discordUrl": "https://discord.gg/CVA4z3QYzE",
+    "visitContactUrl": "https://www.linkedin.com/in/panni-csereklye-70225313a/",
+    "linkedinUrl": "https://www.linkedin.com/company/growmesh-io"
+  },
+  "posts": [
+    {
+      "slug": "mesh-retro-2",
+      "displayTitle": "mesh. retro - becoming",
+      "date": "2026-10-20",
+      "category": "Community",
+      "url": "https://www.growmesh.io/posts/mesh-retro-2",
+      "photo": {
+        "name": "after-hours",
+        "alt": "Members working and talking at mesh. in Budapest."
+      }
+    },
+    {
+      "slug": "lean4-autoformalization",
+      "displayTitle": "Lean4 Autoformalization Engine",
+      "date": "2026-08-15",
+      "category": "Software",
+      "url": "https://www.growmesh.io/posts/lean4-autoformalization",
+      "photo": null
+    },
+    {
+      "slug": "badcompany-2",
+      "displayTitle": "Beyond the Context Window",
+      "date": "2026-01-18",
+      "category": "Software",
+      "url": "https://www.growmesh.io/posts/badcompany-2",
+      "photo": null
+    },
+    {
+      "slug": "call-for-builders",
+      "displayTitle": "Call for Builders",
+      "date": "2025-11-29",
+      "category": "Community",
+      "url": "https://www.growmesh.io/posts/call-for-builders",
+      "photo": {
+        "name": "lamp",
+        "alt": "A builder at a laptop beside a large exposed light bulb."
+      }
+    },
+    {
+      "slug": "building-aquaLab",
+      "displayTitle": "Building AquaLab",
+      "date": "2025-11-05",
+      "category": "Hardware",
+      "url": "https://www.growmesh.io/posts/building-aquaLab",
+      "photo": {
+        "name": "aqualab",
+        "alt": "Domokos wiring the electronics for AquaLab at a workbench."
+      }
+    },
+    {
+      "slug": "building-resoloon",
+      "displayTitle": "How We Started Building Resoloon",
+      "date": "2025-09-10",
+      "category": "Hardware",
+      "url": "https://www.growmesh.io/posts/building-resoloon",
+      "photo": {
+        "name": "flight",
+        "alt": "An early balloon payload with its wiring exposed."
+      }
+    },
+    {
+      "slug": "mesh-retro",
+      "displayTitle": "mesh. Retrospective",
+      "date": "2025-07-13",
+      "category": "Community",
+      "url": "https://www.growmesh.io/posts/mesh-retro",
+      "photo": {
+        "name": "early",
+        "alt": "People gathered around an early mesh. worktable with a VR headset."
+      }
+    },
+    {
+      "slug": "cansat-competition",
+      "displayTitle": "CanSat - Satellite inside your soda can",
+      "date": "2025-02-19",
+      "category": "Hardware",
+      "url": "https://www.growmesh.io/posts/cansat-competition",
+      "photo": {
+        "name": "parachute",
+        "alt": "A can-sized payload on the ground with its red parachute."
+      }
+    },
+    {
+      "slug": "addressing-the-challenges-of-traditional-thermometers",
+      "displayTitle": "Addressing the Challenges of Traditional Thermometers",
+      "date": "2025-02-02",
+      "category": "Hardware",
+      "url": "https://www.growmesh.io/posts/addressing-the-challenges-of-traditional-thermometers",
+      "photo": {
+        "name": "thermometer",
+        "alt": "The prototype thermometer with paired ultrasonic transducers, breadboards, and jumper wires."
+      }
+    },
+    {
+      "slug": "builder-space",
+      "displayTitle": "What is a builder space anyway?",
+      "date": "2024-12-03",
+      "category": "Community",
+      "url": "https://www.growmesh.io/posts/builder-space",
+      "photo": {
+        "name": "room",
+        "alt": "Builders working at desks in a tall-windowed Budapest room."
+      }
+    },
+    {
+      "slug": "simple-way-to-build-efficient-repo-based-apps",
+      "displayTitle": "RepoSnap - a simple way to build efficient repo-based apps",
+      "date": "2024-09-30",
+      "category": "Software",
+      "url": "https://www.growmesh.io/posts/simple-way-to-build-efficient-repo-based-apps",
+      "photo": null
+    }
+  ]
+}

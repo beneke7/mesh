@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "virtual-reality.webp",
+    "width": 1520,
+    "height": 1140,
+    "alt": "Two people wearing VR headsets stand in a doorway, one reaching out with an open hand.",
+    "caption": "Around the space"
+  },
+  {
+    "filename": "jam-session.webp",
+    "width": 1140,
+    "height": 1520,
+    "alt": "A bassist and guitarist play side by side, their instrument cables trailing across the parquet.",
+    "caption": "Mesh jam, May 2026"
+  },
+  {
+    "filename": "workshop-door.webp",
+    "width": 1520,
+    "height": 1140,
+    "alt": "A small machine stands on the parquet floor while a builder works at a desk by the window.",
+    "caption": "Around the space"
+  },
+  {
+    "filename": "chessboard.webp",
+    "width": 1520,
+    "height": 1140,
+    "alt": "A builder holds up a physical chessboard beside the digital board on a screen.",
+    "caption": "Demo night, November 2025"
+  },
+  {
+    "filename": "front-row.webp",
+    "width": 1012,
+    "height": 1520,
+    "alt": "A smiling audience member in a striped shirt sits with clasped hands among the rows at demo night.",
+    "caption": "Open demo night, March 2026"
+  },
+  {
+    "filename": "first-light.webp",
+    "width": 1520,
+    "height": 855,
+    "alt": "Sleeping bags on a wooden lookout platform at sunrise, with hills and a river beyond.",
+    "caption": "Mesh hike, April 2026"
+  }
+]
