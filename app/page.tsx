@@ -4,17 +4,12 @@ import Journal from "../components/journal/Journal";
 import Builds from "../components/journal/Builds";
 import { u } from "../lib/base";
 
-const tagline = "We’re a builder space in Budapest where we seek and develop\u00a0talent.";
-
 export default function Home() {
   return <>
     <a className="jump-link" href="#journal">Skip to latest posts</a>
     <main id="main">
       <Cover />
       <div className="home-content grain-surface">
-        <section id="intro" className="intro" aria-label="What mesh. does">
-          <p className="tagline wrap" data-text={tagline}>{tagline}</p>
-        </section>
         <Journal />
         <Builds />
         <section className="community" aria-label="Join mesh."><div className="wrap">

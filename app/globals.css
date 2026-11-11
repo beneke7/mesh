@@ -161,12 +161,12 @@ button[aria-disabled=true]{cursor:default}
 /* Content scaling belongs to the front page only. */
 .home-content{font-size:calc(var(--body-size) * .9);zoom:.81}
 .home-content .section-title{font-size:clamp(30.6px,4.5vw,61.2px);margin-bottom:clamp(22.5px,2.97vw,43.2px)}
-.home-content .journal{padding-block:clamp(55.8px,5.94vw,93.6px) clamp(46.8px,4.95vw,76.5px)}
+.home-content .journal{padding-block:clamp(96px,10vw,168px) clamp(46.8px,4.95vw,76.5px)}
 .home-content .post-entry h3{font-size:clamp(19.55px,2.04vw,28.9px)}
 .home-content .post-meta{font-size:clamp(11.9px,1.105vw,15.3px)}
 @media(max-width:700px){
  .home-content .section-title{font-size:clamp(26.1px,6.48vw,41.4px);margin-bottom:28px}
- .home-content .journal{padding-block:43.2px 45px}
+ .home-content .journal{padding-block:76px 45px}
  .home-content .post-entry h3{font-size:clamp(17.85px,4.76vw,22.95px)}
  .home-content .post-meta{font-size:11.9px}
 }
