@@ -5,11 +5,12 @@ import Builds from "../components/journal/Builds";
 import { u } from "../lib/base";
 
 const joinVariants = [
-  ["misreg", "Misregistered print (hover lines it up)"],
-  ["grain", "Grain-filled letters"],
-  ["cut", "Raw cut-off"],
-  ["blueprint", "Blueprint"],
-  ["invert", "Hover invert"],
+  ["misreg", "Misregistered print, softer (hover lines it up)"],
+  ["stencil", "Sliced stencil"],
+  ["halftone", "Halftone fade"],
+  ["dymo", "Label-maker tape"],
+  ["crop", "Print crop marks"],
+  ["tag", "Inventory tag"],
 ];
 
 export default function Home() {
