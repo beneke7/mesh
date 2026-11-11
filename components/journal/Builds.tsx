@@ -23,6 +23,7 @@ const builds = [
 export default function Builds() {
   const gallery = useRef<HTMLDivElement>(null);
   const [edges, setEdges] = useState({ left: false, right: false });
+  const [active, setActive] = useState<string | null>(null);
 
   function updateEdges() {
     const element = gallery.current;
@@ -53,7 +54,7 @@ export default function Builds() {
   return <section className="builds" aria-labelledby="builds-title"><div className="wrap">
     <h2 className="section-title" id="builds-title">Builds</h2>
     </div><div className="build-stage"><div className="build-window" id="build-gallery" ref={gallery} onScroll={updateEdges} tabIndex={0} role="region" aria-label="Build projects, scroll horizontally"><div className="build-grid">
-      {builds.map(build => <figure className="build-tile" key={build.title}>
+      {builds.map(build => <figure className={`build-tile${active === build.title ? " is-active" : ""}`} key={build.title} onClick={() => setActive(active === build.title ? null : build.title)}>
         <img src={u(build.image)} alt={build.alt} width="600" height="600" loading="lazy" decoding="async" />
         <figcaption>{build.title}</figcaption>
       </figure>)}
