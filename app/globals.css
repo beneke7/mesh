@@ -90,24 +90,12 @@ button[aria-disabled=true]{cursor:default}
  text-align:justify;hyphens:auto;
 }
 .join-button{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:clamp(43.2px,5.4vw,82.8px);padding:clamp(13px,2vw,30px) clamp(20px,3vw,48px);background:var(--accent);color:#fff;font:var(--heading-weight) clamp(66.6px,11.7vw,171px)/1.1 var(--mono);letter-spacing:var(--heading-spacing);text-transform:uppercase}
-.join-button:hover{filter:brightness(1.15)}
-/* TEMP: Join variants */
-.join-variant{margin-top:clamp(40px,4vw,64px)}.join-variant .join-button{margin-top:10px}
-.join-label{color:var(--secondary);font:400 13px/1.4 var(--mono)}
 .join-button{position:relative;overflow:hidden}
+/* Misregistered print: an outline copy sits off the solid word; on hover it lines up and the block inverts. */
 .join-word{position:relative;z-index:1}
 .join-ghost{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:transparent;-webkit-text-stroke:1.5px #fff;transform:translate(.07em,.045em);transition:transform .35s cubic-bezier(.2,.7,.2,1);pointer-events:none}
-.join--misreg .join-word{color:#f3cfc4}
-.join--misreg:hover .join-ghost{transform:none}
-.join--stencil .join-word{-webkit-mask:repeating-linear-gradient(#000 0 .15em,transparent .15em .185em);mask:repeating-linear-gradient(#000 0 .15em,transparent .15em .185em)}
-.join--halftone::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgb(255 255 255 / .3) 1.3px,transparent 1.8px) 0 0/9px 9px;-webkit-mask:linear-gradient(to left,#000,transparent 75%);mask:linear-gradient(to left,#000,transparent 75%)}
-.join--dymo .join-word{background:#111;color:#f4f4f2;padding:.06em .35em .1em;font-size:.62em;letter-spacing:.1em;transform:rotate(-1.6deg);box-shadow:0 .06em .14em rgb(0 0 0 / .55);text-shadow:0 -1px 0 rgb(0 0 0 / .7),0 1px 0 rgb(255 255 255 / .22)}
-.join--crop{overflow:visible;--mark:rgb(255 255 255 / .55)}
-.join--crop::before{content:"";position:absolute;inset:-16px;pointer-events:none;background:linear-gradient(var(--mark),var(--mark)) 0 16px/10px 1px no-repeat,linear-gradient(var(--mark),var(--mark)) 16px 0/1px 10px no-repeat,linear-gradient(var(--mark),var(--mark)) 100% 16px/10px 1px no-repeat,linear-gradient(var(--mark),var(--mark)) calc(100% - 16px) 0/1px 10px no-repeat,linear-gradient(var(--mark),var(--mark)) 0 calc(100% - 16px)/10px 1px no-repeat,linear-gradient(var(--mark),var(--mark)) 16px 100%/1px 10px no-repeat,linear-gradient(var(--mark),var(--mark)) 100% calc(100% - 16px)/10px 1px no-repeat,linear-gradient(var(--mark),var(--mark)) calc(100% - 16px) 100%/1px 10px no-repeat}
-.join--crop::after{content:"";position:absolute;right:14px;top:14px;width:16px;height:16px;border:1px solid var(--mark);border-radius:50%;background:linear-gradient(var(--mark),var(--mark)) center/1px 100% no-repeat,linear-gradient(var(--mark),var(--mark)) center/100% 1px no-repeat}
-.join--tag{justify-content:space-between;align-items:flex-end}
-.join--tag::before{content:"MESH\2014 0001 \00B7 BUDAPEST";position:absolute;left:clamp(20px,3vw,48px);top:clamp(10px,1.4vw,20px);font:400 12px/1 var(--mono);letter-spacing:.08em;color:rgb(255 255 255 / .65)}
-.join--tag::after{content:"";width:2.4em;height:.72em;margin-bottom:.12em;background:repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 5px,#fff 5px 6px,transparent 6px 9px,#fff 9px 13px,transparent 13px 15px,#fff 15px 16px,transparent 16px 21px)}
+.join-button:hover{background:#fff;color:var(--accent)}
+.join-button:hover .join-ghost{transform:none;-webkit-text-stroke-color:var(--accent)}
 .footer-content{
  border-top:1px solid color-mix(in srgb,var(--ink) 40%,transparent);
  display:flex;align-items:center;gap:24px;flex-wrap:wrap;padding-block:clamp(27px,3.15vw,46.8px);
