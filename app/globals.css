@@ -91,10 +91,9 @@ button[aria-disabled=true]{cursor:default}
 }
 .join-button{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:clamp(43.2px,5.4vw,82.8px);padding:clamp(13px,2vw,30px) clamp(20px,3vw,48px);background:var(--accent);color:#fff;font:var(--heading-weight) clamp(66.6px,11.7vw,171px)/1.1 var(--mono);letter-spacing:var(--heading-spacing);text-transform:uppercase}
 .join-button{position:relative;overflow:hidden}
-/* TEMP */.join-variant{margin-top:clamp(40px,4vw,64px)}.join-variant .join-button{margin-top:10px}.join-label{color:var(--secondary);font:400 13px/1.4 var(--mono)}
 /* Misregistered print: an outline copy sits off the solid word; on hover it lines up and the block inverts. */
 .join-word{position:relative;z-index:1}
-.join-ghost{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:transparent;-webkit-text-stroke:1.5px #fff;transform:translate(var(--gx,.07em),var(--gy,.045em));transition:transform .35s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.join-ghost{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:transparent;-webkit-text-stroke:1.5px #fff;transform:translateX(.08em);transition:transform .35s cubic-bezier(.2,.7,.2,1);pointer-events:none}
 .join-button:hover{background:#fff;color:var(--accent)}
 .join-button:hover .join-ghost{transform:none;-webkit-text-stroke-color:var(--accent)}
 .footer-content{
