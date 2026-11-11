@@ -2,7 +2,7 @@ import { formatDate, posts, publishedArticle, storyPath } from "../../lib/journa
 import { u } from "../../lib/base";
 
 export default function Journal({ full = false }: { full?: boolean }) {
-  const entries = full ? posts : posts.filter(post => !post.slug.startsWith("call-for-builders")).slice(0, 4);
+  const entries = full ? posts : posts.filter(post => !post.slug.startsWith("call-for-builders")).slice(0, 5);
   const Heading = full ? "h1" : "h2";
   return <section id="journal" className="journal" aria-labelledby="journal-title">
     <div className="wrap">
