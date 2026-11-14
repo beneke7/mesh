@@ -42,10 +42,6 @@ export default function Cover() {
   }
   return <section ref={cover} className="cover" aria-label="mesh. builderspace" data-ready={ready ? "yes" : "no"}>
     <div className="film-field">
-      {/* Reds up, neutrals untouched: R' = R + .3·(R − (G+B)/2). Referenced by --video-filter. */}
-      <svg width="0" height="0" aria-hidden="true" style={{ position: "absolute" }}><filter id="reds" colorInterpolationFilters="sRGB">
-        <feColorMatrix type="matrix" values="1.3 -.15 -.15 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
-      </filter></svg>
       <picture className="film-poster">
         <source media="(max-aspect-ratio: 4/5)" srcSet={u("/film/poster-tall.webp")} />
         <img src={u("/film/poster-wide.webp")} alt="" width="1280" height="720" fetchPriority="high" />
