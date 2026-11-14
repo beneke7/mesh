@@ -3,7 +3,10 @@ import { useEffect, useRef, useState } from "react";
 import SocialIcon from "./SocialIcon";
 import { u } from "../../lib/base";
 
-export default function Cover() {
+type Film = { wide: string; tall: string; posterWide: string; posterTall: string };
+
+// `film` swaps in another montage (drafts); without it, the house montage with its AV1 encodes.
+export default function Cover({ film: alt }: { film?: Film } = {}) {
   const film = useRef<HTMLVideoElement>(null);
   const cover = useRef<HTMLElement>(null);
   const [wantsMotion, setWantsMotion] = useState(false);
@@ -43,15 +46,20 @@ export default function Cover() {
   return <section ref={cover} className="cover" aria-label="mesh. builderspace" data-ready={ready ? "yes" : "no"}>
     <div className="film-field">
       <picture className="film-poster">
-        <source media="(max-aspect-ratio: 4/5)" srcSet={u("/film/poster-tall.webp")} />
-        <img src={u("/film/poster-wide.webp")} alt="" width="1280" height="720" fetchPriority="high" />
+        <source media="(max-aspect-ratio: 4/5)" srcSet={u(alt?.posterTall ?? "/film/poster-tall.webp")} />
+        <img src={u(alt?.posterWide ?? "/film/poster-wide.webp")} alt="" width="1280" height="720" fetchPriority="high" />
       </picture>
       <video ref={film} className="film" muted playsInline loop preload="metadata" aria-hidden="true"
         disablePictureInPicture onPlaying={() => setReady(true)} onError={() => setFailed(true)}>
-        <source media="(max-aspect-ratio: 4/5)" src={u("/film/mesh-color-tall-av1.mp4")} type={'video/mp4; codecs="av01.0.05M.08"'} />
-        <source media="(max-aspect-ratio: 4/5)" src={u("/film/mesh-color-tall.mp4")} type="video/mp4" />
-        <source src={u("/film/mesh-color-wide-av1.mp4")} type={'video/mp4; codecs="av01.0.05M.08"'} />
-        <source src={u("/film/mesh-color-wide.mp4")} type="video/mp4" />
+        {alt ? <>
+          <source media="(max-aspect-ratio: 4/5)" src={u(alt.tall)} type="video/mp4" />
+          <source src={u(alt.wide)} type="video/mp4" />
+        </> : <>
+          <source media="(max-aspect-ratio: 4/5)" src={u("/film/mesh-color-tall-av1.mp4")} type={'video/mp4; codecs="av01.0.05M.08"'} />
+          <source media="(max-aspect-ratio: 4/5)" src={u("/film/mesh-color-tall.mp4")} type="video/mp4" />
+          <source src={u("/film/mesh-color-wide-av1.mp4")} type={'video/mp4; codecs="av01.0.05M.08"'} />
+          <source src={u("/film/mesh-color-wide.mp4")} type="video/mp4" />
+        </>}
       </video>
     </div>
     <div className="hero-heading">
@@ -61,7 +69,7 @@ export default function Cover() {
         <a className="hero-discord" href="https://discord.gg/CVA4z3QYzE" aria-label="Discord"><SocialIcon brand="discord" /></a>
       </nav>
     </div>
-    <a className="hero-down" href="#journal" aria-label="Scroll to latest posts">
+    <a className="hero-down" href="#builds" aria-label="Scroll to builds">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5 12 16.5 20 8.5" /></svg>
     </a>
     {!failed && <button type="button" className="motion-control" aria-label={wantsMotion ? "Pause montage" : "Play montage"} onClick={toggleMotion}>

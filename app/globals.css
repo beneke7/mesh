@@ -222,4 +222,4 @@ button[aria-disabled=true]{cursor:default}
 .home-content .build-grid{width:calc(var(--cols,5) * 25%);max-width:none;margin-inline:0}
 
 @media(max-width:700px){.home-content .build-grid{width:calc(var(--cols,5) * 40%)}}
-.home-content .community+.journal{padding-top:clamp(40px,4.5vw,76px)}
+.home-content .community+.journal{padding-top:clamp(16px,1.8vw,28px)}

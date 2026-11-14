@@ -105,7 +105,7 @@ export default function Builds() {
     element.scrollBy({ left: direction * step, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   }
 
-  return <section className="builds" aria-labelledby="builds-title"><div className="wrap">
+  return <section className="builds" id="builds" aria-labelledby="builds-title"><div className="wrap">
     <h2 className="section-title" id="builds-title">Builds</h2>
     </div><div className="build-stage"><div className="build-window" id="build-gallery" ref={gallery} onScroll={updateEdges} tabIndex={0} role="region" aria-label="Build projects, scroll horizontally"><div className="build-grid" style={{ "--cols": COLS } as CSSProperties}>
       {order.map(({ build, row, col, center: isCenter }) => <figure style={{ gridRow: row + 1, gridColumn: col + 1 }} className={`build-tile${isCenter ? " is-center" : ""}${build.image ? "" : " no-image"}${build.logo ? " is-logo" : ""}${active === build.title ? " is-active" : ""}`} key={build.title} onClick={event => {
